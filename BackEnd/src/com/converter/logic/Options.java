@@ -1,6 +1,8 @@
 package com.converter.logic;
 
-public class Options {
+import com.converter.modelo.MonedaInterface;
+
+public class Options  {
     private String moneda1;
     private String moneda2;
 
@@ -18,8 +20,6 @@ public class Options {
     public String getMoneda2() {
         return moneda2;
     }
-
-    //methods
 
 
 }

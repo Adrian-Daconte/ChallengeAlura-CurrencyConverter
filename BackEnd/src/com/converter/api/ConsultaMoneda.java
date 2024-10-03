@@ -1,6 +1,8 @@
 package com.converter.api;
 
+import com.converter.logic.Options;
 import com.converter.modelo.ConverterApi;
+import com.converter.modelo.MonedaInterface;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
@@ -13,7 +15,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 
-public class ConsultaMoneda {
+public class  ConsultaMoneda implements MonedaInterface {
     Gson gson = new GsonBuilder()
             .setPrettyPrinting()
             .create();
@@ -40,5 +42,10 @@ public class ConsultaMoneda {
         } catch (Exception e) {
             throw new RuntimeException("No se encontro Moneda ");
         }
+    }
+
+    @Override
+    public Options recibirMonedas(String moneda1, String moneda2) {
+        return new Options(moneda1,moneda2);
     }
 }

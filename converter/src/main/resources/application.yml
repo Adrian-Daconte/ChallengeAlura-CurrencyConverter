@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: converter
+api:
+  key: ${API_KEY}

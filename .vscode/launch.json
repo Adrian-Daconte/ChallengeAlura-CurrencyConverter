@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ConverterApplication<converter>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.dako.converter.ConverterApplication",
+            "projectName": "converter",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

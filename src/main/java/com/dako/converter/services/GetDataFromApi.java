@@ -57,7 +57,7 @@ public class GetDataFromApi {
                     """, amount, fromCurrency, toCurrency, convertedValue, toCurrency);
             return json;
         } catch (Exception e) {
-            System.err.println("Error inesperado: " + e.getMessage());
+            System.err.println("Error inesperado: verifica las monedas a convertir");
             e.printStackTrace();
             return null;
         }

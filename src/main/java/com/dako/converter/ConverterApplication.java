@@ -6,7 +6,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.dako.converter.services.AppMain;
-import com.dako.converter.services.GetDataFromApi;
 
 @SpringBootApplication
 public class ConverterApplication implements CommandLineRunner {
